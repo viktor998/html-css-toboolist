@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(230, 230, 230, 0.459);
+}
+
+/* Header */
+.header{
+    height: 69px;
+    background-color: rgb(255, 255, 255) ;
+}
+
+.logo >img,
+.logo >span{
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 10px;    
+}
+
+.logo >span{
+    position: absolute;
+    top: 5px;
+    left: 55px;
+}
+/* Header */
+
+/* Container */
+
+.container{
+    background-color: rgb(255, 255, 255);
+    margin: 30px 150px ;
+    border-radius: 7px;
+}
+
+.buttons{
+    margin-left: 80px;
+}
+
+.buttons :enabled{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgb(81, 175, 206);
+    border-radius: 7px;
+    border-style: none;
+}
+
+.buttons :disabled{
+    padding: 10px;
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+}
+
+.list{
+    margin-left:  80px;
+}
+
+.list li{
+    list-style: none;
+}
+
+
+.triangle{
+    margin-top: 30px;
+}
+.triangle::before{
+    content: '\25BE';
+}
+.check, 
+.cross{
+    margin-top: 15px;
+}
+.check::before{
+    content: '\2714';
+    font-size: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    color: rgb(9, 204, 107);
+    border: 1.5px solid;
+    border-radius: 50%;
+}
+
+.cross::before{
+    content: '\2718';
+    font-size: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    color: rgb(204, 9, 9);
+    border: 1.75px solid;
+    border-radius: 50%;
+}
+
+/* Card */
+.check .card{
+    display: inline-block;
+}
+
+.card{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    
+}
+
+
+.card p{
+    padding: 5px;
+}
+
+.card.editorial{
+    background: rgb(81, 175, 206);
+}
+.card.q1{
+    background: rgb(160, 81, 206);
+}
+
+.card.recruiting{
+    display: inline-block;
+    width: 65px;
+    background: rgb(77, 156, 136);
+}
+
+.card.mobile{
+    background: rgb(187, 143, 61);
+}
+
+.card.website{
+    background: rgba(187, 61, 155, 0.788);
+}
+
+.card.sales{
+    background: rgb(185, 206, 66);
+}
